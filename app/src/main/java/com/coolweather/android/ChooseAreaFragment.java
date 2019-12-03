@@ -35,7 +35,8 @@ import java.util.List;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
-
+//查询省市县的数据
+//增加了当选中县后跳到天气界面的代码
 
 public class ChooseAreaFragment extends Fragment {
     public static final int LEVEL_PROVINCE = 0;
@@ -105,7 +106,8 @@ public class ChooseAreaFragment extends Fragment {
                         intent.putExtra("weather_id",weatherId);
                         startActivity(intent);
                         getActivity().finish();
-                    }else if(getActivity() instanceof WeatherActivity){
+                    }//getActivity() 和instanceof结合判断该碎片在mainactivity里还是Weatheractivity里
+                    else if(getActivity() instanceof WeatherActivity){
                         WeatherActivity activity = (WeatherActivity)getActivity();
                         activity.drawerLayout.closeDrawers();
                         activity.swipeRefreshLayout.setRefreshing(true);

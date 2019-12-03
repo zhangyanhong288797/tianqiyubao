@@ -4,7 +4,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
 /**
- * Created by CHW on 2018/6/9.
+ * 先和服务器进行交互
  */
 
 public class HttpUtil {

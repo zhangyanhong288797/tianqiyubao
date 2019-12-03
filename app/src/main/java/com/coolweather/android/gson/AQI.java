@@ -1,7 +1,7 @@
 package com.coolweather.android.gson;
 
 /**
- * Created by CHW on 2018/6/13.
+ * 显示aqi和PM2.5
  */
 
 public class AQI {

@@ -3,7 +3,7 @@ package com.coolweather.android.gson;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by CHW on 2018/6/13.
+ * 显示天气情况
  */
 
 public class Now {

@@ -13,12 +13,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * Created by CHW on 2018/6/9.
+ *
  */
 
 public class Utility {
     /**
-     * jiexi he chuli fuwuqi fanhui de shengjishuju
+     * 解析和处理服务器返回的省级市级和县级数据
+     * 先用JSONArrey和JSONObject将数据解析出来，组装成实体对象，调用save方法将数据存储到数据库中
      */
     public static boolean handProvinceResponse(String response){
         if(!TextUtils.isEmpty(response)){

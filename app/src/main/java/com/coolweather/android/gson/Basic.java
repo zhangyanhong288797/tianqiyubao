@@ -3,7 +3,7 @@ package com.coolweather.android.gson;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by CHW on 2018/6/13.
+ * 城市和城市对应的天气id
  */
 
 public class Basic {

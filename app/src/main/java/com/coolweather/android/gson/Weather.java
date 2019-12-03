@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 /**
- * Created by CHW on 2018/6/13.
+ * 对五个类进行引用
  */
 
 public class Weather {

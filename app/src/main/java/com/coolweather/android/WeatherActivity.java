@@ -152,7 +152,7 @@ public class WeatherActivity extends AppCompatActivity {
         });
     }
     /**
-     * gchuli bing zhanshi Weather shitilei zhong de shuju
+     * chuli bing zhanshi Weather shitilei zhong de shuju
      */
     private void showWeatherInfo(Weather weather) {
         if (weather != null && "ok".equals(weather.status)) {
@@ -165,6 +165,7 @@ public class WeatherActivity extends AppCompatActivity {
             degreeText.setText(degree);
             weatherInfoText.setText(weatherInfo);
             forecastLayout.removeAllViews();
+            //用for循环来处理每天的天气信息
             for (Forecast forecast : weather.forecastList) {
                 View view = LayoutInflater.from(this).inflate(R.layout.forecast_item, forecastLayout, false);
                 TextView dateText = (TextView) view.findViewById(R.id.date_text);

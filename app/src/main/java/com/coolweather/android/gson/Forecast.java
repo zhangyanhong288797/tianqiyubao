@@ -3,7 +3,7 @@ package com.coolweather.android.gson;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by CHW on 2018/6/13.
+ * 天气情况以及最高温和最低温显示
  */
 
 public class Forecast {
